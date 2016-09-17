@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>ng-demo-callreport</Name>
+    <ProjectGuid>{a1680a36-ba95-49cd-820a-0434cf2428a2}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="assets\css\bootstrap.min.css" />
+    <Compile Include="assets\css\starter-template.css" />
+    <Compile Include="assets\dir\callmetrics.html" />
+    <Compile Include="assets\html\about.html" />
+    <Compile Include="assets\html\app.html" />
+    <Compile Include="assets\html\contact.html" />
+    <Compile Include="assets\html\home.html" />
+    <Compile Include="assets\img\quote.jpg" />
+    <Compile Include="assets\js\a96b863fd6.js" />
+    <Compile Include="assets\js\angular-mocks.js" />
+    <Compile Include="assets\js\angular-resource.min.js" />
+    <Compile Include="assets\js\angular-route.min.js" />
+    <Compile Include="assets\js\angular.min.js" />
+    <Compile Include="assets\js\application.js" />
+    <Compile Include="assets\js\bootstrap.min.js" />
+    <Compile Include="assets\js\controllers.js" />
+    <Compile Include="assets\js\directives.js" />
+    <Compile Include="assets\js\ie10-viewport-bug-workaround.js" />
+    <Compile Include="assets\js\jquery.min.js" />
+    <Compile Include="assets\js\routes.js" />
+    <Compile Include="assets\js\sample.js" />
+    <Compile Include="assets\js\services.js" />
+    <Compile Include="assets\js\values.js" />
+    <Compile Include="index.html" />
+    <Compile Include="LICENSE" />
+    <Compile Include="ng-demo-callreport.phpproj" />
+    <Compile Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\api" />
+    <Folder Include="assets\css" />
+    <Folder Include="assets\dir" />
+    <Folder Include="assets\html" />
+    <Folder Include="assets\img" />
+    <Folder Include="assets\js" />
+    <Folder Include="assets" />
+    <Folder Include="PM" />
+  </ItemGroup>
+</Project>

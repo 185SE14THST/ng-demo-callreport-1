@@ -1,0 +1,66 @@
+<div ng-controller="applicationController1">
+
+<div class="container">
+<div class="row">
+<p>&nbsp;</p>
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{ app1City }}</h2>
+            <p class="blog-post-meta">January 1, 2014 by <a href="#">{{ name }}</a></p>
+
+<ul class="list-inline">
+  <li class="list-inline-item"><a href="/#/app/1" ng-class="{'bg-success':days==='1'}">1 Day</a></li>
+  <li class="list-inline-item"><a href="/#/app/3" ng-class="{'bg-success':days==='3'}">3 Day</a></li>
+  <li class="list-inline-item"><a href="/#/app/5" ng-class="{'bg-success':days==='5'}">5 Day</a></li>
+    <li class="list-inline-item"><a href="/#/app/10" ng-class="{'bg-success':days==='10'}">10 Day</a></li>
+  <li class="list-inline-item"><a href="/#/app/16" ng-class="{'bg-success':days==='16'}">16 Day</a></li>
+</ul>
+
+    <table class="table table-condensed table-hover">
+        <thead>
+            <tr>
+                <th><i class="fa fa-calendar" aria-hidden="true"></i>
+ Date</th>
+                <th><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+ Hi</th>
+                <th><i class="fa fa-cloud-download" aria-hidden="true"></i>
+ Low</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="w in app1WeatherResult.list">
+                <td>{{ convertToD(w.dt) | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+                <td>{{ w.temp.max }}</td>
+                <td>{{ w.temp.min }}</td>
+            </tr>
+        </tbody>
+    </table>
+          </div><!-- /.blog-post -->
+			<p><a href="#/"> Return home</a>
+          <p>&nbsp;</p>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>{{ name }}</h4>
+            <p>Below is a brief description of the resources used for this froject.</p>
+            <hr />
+             <strong>Resources</strong>
+            <ol class="list-unstyled">
+              <li><a href="#">HTML, CSS, JavaScript</a></li>
+              <li><a href="http://v4-alpha.getbootstrap.com">Botstrap 4</a></li>
+              <li><a href="http://http://fontawesome.io/">Font Awsome</a></li>
+              <li><a href="http://angularjs.org/">AngularJS 1.5.8</a></li>
+			  <li><a href="http://openweathermap.org/">OpenWeatherMap</a></li>
+              <li><a href="https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx">Visual Studio 2015</a></li>
+              <li><a href="https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx">Microsoft Team Foundation Server 2015</a></li>
+              <li><a href="http://www.ubuntu.com/">Ubuntu (LAMP)</a></li>
+
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+</div><!-- /.container -->

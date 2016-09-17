@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="project">
+<head>
+  <title>ng-demo-reports</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap Requirements -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/starter-template.css">
+<!-- Font Awsome -->
+<script src="assets/js/a96b863fd6.js"></script>
+<!-- Application Requirements -->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/angular-resource.min.js"></script>
+    <script src="assets/js/angular-mocks.js"></script>
+<!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+  <body ng-cloak ng-controller="mainController">
+
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+      <a class="navbar-brand" href="#/">{{ companyDetails.appName }}</a>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+      <!-- ng-view -->
+      <div ng-view></div>
+
+<!-- Application Configuration -->
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/routes.js"></script>
+    <script src="assets/js/values.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/directives.js"></script>
+    <script src="assets/js/controllers.js"></script>
+
+<!-- Application Customizations -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

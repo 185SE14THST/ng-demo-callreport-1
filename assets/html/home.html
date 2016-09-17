@@ -1,0 +1,38 @@
+<div class="container">
+      <div class="starter-template">
+        <h1>{{ companyDetails.appName }}</h1>
+        <p class="lead">Welcome to {{ companyDetails.companyName }}.<br> This app demonstrates the custom use of phone activity monitoring with an API feed.</p>
+      </div>
+</div>
+
+    <div class="container">
+        <div class="row" ng-controller="applicationController1">
+
+            <chart-metrics recieved-calls="{{recievedCalls}}" total-minutes="{{totalMinutes}}"  avg-call-time="{{avgCallTime}}" avg-calls-per-day="{{avgCallsPerDay}}" overage-minutes="{{overageMinutes}}" total-costs="{{totalCosts}}">Loading ...</chart-metrics>
+        </div>
+            <div class="row">
+                <div ng-controller="applicationController1">
+                    <strong>Graph and Charts</strong> <i class="fa fa-area-chart" aria-hidden="true"></i> | <a href=""><small ng-click="chartTimer()">(Click here for realtime data) </small></a>
+                        <div id="monitor">
+                            <div id="linechart_material" ng-bing="monitor">Loading ...</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <hr>
+
+      <footer>
+        <p class="footer">&copy; {{ companyDetails.appYear }} - 2016 |     {{ companyDetails.companyName }} |
+            {{ companyDetails.companyAddress }} |
+            {{ companyDetails.companyCity }},
+            {{ companyDetails.companyState }}
+            {{ companyDetails.companyZip }} |
+            {{ companyDetails.companyPhone }} |
+            {{ companyDetails.companyEmail }}</p>
+      </footer>
+    </div> <!-- /container -->
