@@ -43,8 +43,6 @@ project.service('projectApp1', function() {
             dashboardData : this.chartRowTotals,
             chartRowData : chartRowData,
         }
-        // debug: console.log(chartObjects['chartRowData']);
-        //return  chartObjects['chartRowData']; // OK
         return  chartObjects // Experimental
     }
 
@@ -63,10 +61,6 @@ project.service('projectApp1', function() {
 
         var xyz = chartData(1, 100, 25);
         metrics = xyz['dashboardData'];
-        //$scope.valueOf()
-        console.log('drawChart:65: ' + metrics)
-
-
         data.addRows( xyz['chartRowData'] );
 
       var options = {
@@ -84,7 +78,7 @@ project.service('projectApp1', function() {
 
       chart.draw(data, options);
     }
-    // Function call
+
     this.drawChart = function() {
         drawChart();
     }
